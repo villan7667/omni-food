@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OmniFood | Premium Food Delivery</title>
+  <link rel="icon" href="assets\extra\logo.png" type="image/png">
+  <meta name="description" content="Goodbye junk food, hello super healthy meals. We deliver premium, healthy meals right to your doorstep.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<!-- yes its me villan@7667  -->
+ <!--  -->
+<body>
+  <header class="navbar">
+    <div class="container">
+      <a href="/" class="logo">
+        <div class="logo-icon">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="2" />
+            <path d="M15 14L15 26" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <path d="M25 14L25 26" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <path d="M15 20L25 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </div>
+        <span class="logo-text">OMNI FOOD</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <a href="#food-delivery" class="nav-link">FOOD DELIVERY</a>
+        <a href="#meals" class="nav-link">OUR MEALS</a>
+        <a href="#how-it-works" class="nav-link">HOW IT WORKS</a>
+        <a href="#cities" class="nav-link">OUR CITIES</a>
+        <a href="#signup" class="btn btn-primary">SIGN-UP</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <svg class="close-icon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Mobile Navigation -->
+      <div class="mobile-nav hidden">
+        <div class="logo">
+         <svg width="80" height="80" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="2" />
+          <path d="M15 14L15 26" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          <path d="M25 14L25 26" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          <path d="M15 20L25 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+        </div>
+        <p>Omni Food</p>
+        <nav>
+          <a href="#food-delivery" class="nav-link">FOOD DELIVERY</a>
+          <a href="#how-it-works" class="nav-link">HOW IT WORKS</a>
+          <a href="#meals" class="nav-link">OUR MEALS</a>
+          <a href="#cities" class="nav-link">OUR CITIES</a>
+          <a href="#signup" class="btn btn-primary">SIGN-UP</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="container">
+        <h1 class="fade-in">
+          GOODBYE JUNK FOOD
+          <br>
+          HELLO SUPER HEALTHY FOOD
+        </h1>
+
+        <p class="fade-in stagger-delay-1">
+          We're on a mission to help you eat better. Our chefs create delicious, nutritionally balanced meals delivered
+          right to your door.
+        </p>
+
+        <div class="hero-buttons fade-in stagger-delay-2">
+          <button class="btn btn-primary btn-lg">I'm Hungry</button>
+          <button class="btn btn-outline btn-lg">
+            Show me more
+            <svg img="" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="icon" color="#e67e22">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="food-delivery" class="features">
+      <div class="container">
+        <h2 class="section-heading fade-in">Get Food Fast — Not Fast Food</h2>
+        <p class="section-subheading fade-in stagger-delay-1">
+          Hello, we're OmniFood, your premium food delivery service. We know you're always busy. No time for cooking. So
+          let us take care of that, we're really good at it, we promise!
+        </p>
+
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <div class="feature fade-in stagger-delay-1">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3>Up to 365 days/year</h3>
+            <p>
+              Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You
+              can also choose to order more flexibly if that's your style.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature fade-in stagger-delay-2">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3>Ready in 20 minutes</h3>
+            <p>
+              You're only twenty minutes away from your delicious and super healthy meals delivered right to your home.
+              We work with the best chefs in each town to ensure that you're 100% happy.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature fade-in stagger-delay-3">
+            <div class="feature-icon">
+              <svg width="64px" height="64px" viewBox="0 0 1024.00 1024.00" xmlns="http://www.w3.org/2000/svg" fill="#e67e22" stroke="#e67e22" stroke-width="38.912" transform="rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="2.048"></g><g id="SVGRepo_iconCarrier"><path fill="#e67e22" d="M599.872 203.776a189.44 189.44 0 0 1 64.384-4.672l2.624.128c31.168 1.024 51.2 4.096 79.488 16.32 37.632 16.128 74.496 45.056 111.488 89.344 96.384 115.264 82.752 372.8-34.752 521.728-7.68 9.728-32 41.6-30.72 39.936a426.624 426.624 0 0 1-30.08 35.776c-31.232 32.576-65.28 49.216-110.08 50.048-31.36.64-53.568-5.312-84.288-18.752l-6.528-2.88c-20.992-9.216-30.592-11.904-47.296-11.904-18.112 0-28.608 2.88-51.136 12.672l-6.464 2.816c-28.416 12.224-48.32 18.048-76.16 19.2-74.112 2.752-116.928-38.08-180.672-132.16-96.64-142.08-132.608-349.312-55.04-486.4 46.272-81.92 129.92-133.632 220.672-135.04 32.832-.576 60.288 6.848 99.648 22.72 27.136 10.88 34.752 13.76 37.376 14.272 16.256-20.16 27.776-36.992 34.56-50.24 13.568-26.304 27.2-59.968 40.704-100.8a32 32 0 1 1 60.8 20.224c-12.608 37.888-25.408 70.4-38.528 97.664zm-51.52 78.08c-14.528 17.792-31.808 37.376-51.904 58.816a32 32 0 1 1-46.72-43.776l12.288-13.248c-28.032-11.2-61.248-26.688-95.68-26.112-70.4 1.088-135.296 41.6-171.648 105.792C121.6 492.608 176 684.16 247.296 788.992c34.816 51.328 76.352 108.992 130.944 106.944 52.48-2.112 72.32-34.688 135.872-34.688 63.552 0 81.28 34.688 136.96 33.536 56.448-1.088 75.776-39.04 126.848-103.872 107.904-136.768 107.904-362.752 35.776-449.088-72.192-86.272-124.672-84.096-151.68-85.12-41.472-4.288-81.6 12.544-113.664 25.152z"></path></g></svg>
+            </div>
+            <h3>100% organic</h3>
+            <p>
+              All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics.
+              Good for your health, the environment, and it also tastes better!
+            </p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature fade-in stagger-delay-4">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="8" cy="21" r="1"></circle>
+                <circle cx="19" cy="21" r="1"></circle>
+                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+              </svg>
+            </div>
+            <h3>Order anything</h3>
+            <p>
+              We don't limit your creativity, which means you can order whatever you feel like. You can also choose from
+              our menu containing over 100 delicious meals. It's up to you!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meal Showcase Section -->
+    <section id="meals" class="meal-showcase">
+      <div class="container">
+        <h2 class="section-heading fade-in">Our Meals</h2>
+        <p class="section-subheading fade-in stagger-delay-1">
+          We work with the best chefs to ensure our meals are delicious and nutritionally balanced.
+        </p>
+      </div>
+
+      <div class="meals-grid">
+        <div class="meal fade-in">
+          <img src="/assets/meals/m7.jpg" alt="Korean bibimbap with egg and vegetables">
+          <div class="meal-overlay">
+            <p>Korean bibimbap with egg and vegetables</p>
+          </div>
+        </div>
+        <div class="meal fade-in" style="transition-delay: 100ms;">
+          <img src="/assets/meals/m2.jpg" alt="Simple italian pizza with cherry tomatoes">
+          <div class="meal-overlay">
+            <p>Simple italian pizza with cherry tomatoes</p>
+          </div>
+        </div>
+        <div class="meal fade-in" style="transition-delay: 200ms;">
+          <img src="/assets/meals/m3.jpg" alt="Chicken breast steak with vegetables">
+          <div class="meal-overlay">
+            <p>Chicken breast steak with vegetables</p>
+          </div>
+        </div>
+        <div class="meal fade-in" style="transition-delay: 300ms;">
+          <img src="/assets/meals/m4.jpg" alt="Autumn pumpkin soup">
+          <div class="meal-overlay">
+            <p>Autumn pumpkin soup</p>
+          </div>
+        </div>
+        <div class="meal fade-in" style="transition-delay: 400ms;">
+          <img src="/assets/meals/m5.jpg" alt="Paleo beef steak with vegetables">
+          <div class="meal-overlay">
+            <p>Paleo beef steak with vegetables</p>
+          </div>
+        </div>
+        <div class="meal fade-in" style="transition-delay: 500ms;">
+          <img src="/assets/meals/m6.jpg" alt="Healthy baguette with egg and vegetables">
+          <div class="meal-overlay">
+            <p>Healthy baguette with egg and vegetables</p>
+          </div>
+        </div>
+        <div class="meal fade-in" style="transition-delay: 600ms;">
+          <img src="/assets/meals/m1.jpg" alt="Burger with cheddar and bacon">
+          <div class="meal-overlay">
+            <p>Burger with cheddar and bacon</p>
+          </div>
+        </div>
+        <div class="meal fade-in" style="transition-delay: 700ms;">
+          <img src="/assets/meals/m8.jpg" alt="Granola with cherries and strawberries">
+          <div class="meal-overlay">
+            <p>Granola with cherries and strawberries</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+      <div class="container">
+        <h2 class="section-heading fade-in">How it works — Simple as 1, 2, 3</h2>
+        <p class="section-subheading fade-in stagger-delay-1">
+          OmniFood works with any diet type and preference. We have thousands of recipes to choose from, so you'll never
+          get bored.
+        </p>
+
+        <div class="steps-grid">
+          <!-- Step 1 -->
+          <div class="step-image fade-in stagger-delay-1">
+            <div class="step-number">1</div>
+            <div class="step-img-container">
+              <img src="/assets/extra/1.png" alt="iPhone app">
+            </div>
+          </div>
+
+          <div class="step-content fade-in stagger-delay-2">
+            <h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download the app
+            </h3>
+            <p>
+              Download our mobile app from the App Store or Google Play. It's completely free and easy to use.
+            </p>
+            <p>
+              The app shows you all the available meals for delivery in your area. It's very user-friendly and intuitive
+              to use.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-content fade-in stagger-delay-3">
+         
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+              <path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z"></path>
+              <path d="M3 9V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4"></path>
+            </svg>
+            Choose your meal plan
+          </h3>
+          <p>
+            Our premium meal plans are designed by nutritionists and cooked by professional chefs. You can choose from
+            various meal categories.
+          </p>
+          <p>
+            We offer flexible subscription options - daily, weekly, or monthly deliveries. You can pause or cancel
+            anytime.
+          </p>
+        </div>
+          <div class="step-image fade-in stagger-delay-4">
+            <div class="step-number">2</div>
+            <div class="step-img-container">
+              <img src="/assets/extra/2.png" alt="Meal selection screen">
+            </div>
+        </div>
+     
+
+
+          <!-- Step 3 -->
+          <div class="step-image fade-in stagger-delay-5">
+            <div class="step-number">3</div>
+            <div class="step-img-container">
+              <img src="/assets/extra/3.png" alt="Food delivery">
+            </div>
+          </div>
+
+          <div class="step-content fade-in stagger-delay-6">
+            <h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                <path d="M7 10v12"></path>
+                <path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3 3.88Z"></path>
+              </svg>
+              Enjoy your meals
+            </h3>
+            <p>
+              Your delicious meals will be delivered to your door at the time you specify. All our meals are cooked
+              just-in-time to ensure maximum freshness.
+            </p>
+            <p>
+              We work with the best delivery partners to ensure your meals arrive in perfect condition, ready to eat or
+              heat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cities Section -->
+    <section id="cities" class="cities">
+      <div class="container">
+        <h2 class="section-heading fade-in">We're currently in these cities</h2>
+        <p class="section-subheading fade-in stagger-delay-1">
+          OmniFood works with top-rated chefs in each city to deliver exceptional meals right to your doorstep.
+        </p>
+
+        <div class="cities-grid">
+          <div class="city fade-in">
+            <div class="city-img">
+              <img src="/assets/cities/c1.jpg" alt="New York city">
+            </div>
+            <div class="city-content">
+              <h3>New York</h3>
+              <div class="city-feature">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span>60 top chefs</span>
+              </div>
+              <div class="city-feature">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <span>4.8 average rating</span>
+              </div>
+              <div class="city-feature">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Available citywide</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="city fade-in" style="transition-delay: 100ms;">
+            <div class="city-img">
+              <img src="/assets/cities/c2.jpg" alt="San Francisco city">
+            </div>
+            <div class="city-content">
+              <h3>San Francisco</h3>
+              <div class="city-feature">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span>45 top chefs</span>
+              </div>
+              <div class="city-feature">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <span>4.9 average rating</span>
+              </div>
+              <div class="city-feature">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Available citywide</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="city fade-in" style="transition-delay: 200ms;">
+            <div class="city-img">
+              <img src="/assets/cities/c3.jpg" alt="Chicago city">
+            </div>
+            <div class="city-content">
+              <h3>Chicago</h3>
+              <div class="city-feature">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span>35 top chefs</span>
+              </div>
+              <div class="city-feature">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <span>4.7 average rating</span>
+              </div>
+              <div class="city-feature">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Available citywide</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="city fade-in" style="transition-delay: 300ms;">
+            <div class="city-img">
+              <img src="/assets/cities/c4.jpg" alt="Boston city">
+            </div>
+            <div class="city-content">
+              <h3>Los Angeles</h3>
+              <div class="city-feature">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span>50 top chefs</span>
+              </div>
+              <div class="city-feature">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <span>4.8 average rating</span>
+              </div>
+              <div class="city-feature">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Available citywide</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="section-heading fade-in">Our customers can't live without us</h2>
+        <p class="section-subheading fade-in stagger-delay-1">
+          Don't just take our word for it — read what our customers have to say about our service.
+        </p>
+
+        <div class="testimonials-slider fade-in stagger-delay-2">
+          <button class="slider-btn slider-btn-prev" aria-label="Previous testimonial">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m15 18-6-6 6-6"></path>
+            </svg>
+          </button>
+
+          <button class="slider-btn slider-btn-next" aria-label="Next testimonial">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m9 18 6-6-6-6"></path>
+            </svg>
+          </button>
+
+          <div class="testimonials-container">
+            <div class="testimonials-track">
+              <div class="testimonial">
+                <div class="testimonial-content">
+                  <div class="testimonial-info">
+                    <div class="testimonial-img">
+                      <img src="/assets/reviewer/1.png" alt="Alberto Duncan">
+                    </div>
+                    <div>
+                      <p class="testimonial-text">OmniFood is a life saver! I just started a company, so there's no time for cooking. Now that I got used to it, I couldn't live without my daily meals!</p>
+                      <p class="testimonial-author">&mdash; Alberto Duncan</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial">
+                <div class="testimonial-content">
+                  <div class="testimonial-info">
+                    <div class="testimonial-img">
+                      <img src="/assets/reviewer/2.png" alt="Joana Silva">
+                    </div>
+                    <div>
+                      <p class="testimonial-text">Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Lisbon, but no one comes even close to OmniFood!</p>
+                      <p class="testimonial-author">&mdash; Joana Silva</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial">
+                <div class="testimonial-content">
+                  <div class="testimonial-info">
+                    <div class="testimonial-img">
+                      <img src="/assets/reviewer/3.png" alt="Milton Chapman">
+                    </div>
+                    <div>
+                      <p class="testimonial-text">I was looking for a quick and easy food delivery service in San Francisco. I tried a lot of them and ended up with OmniFood. Best food delivery service in the Bay Area!</p>
+                      <p class="testimonial-author">&mdash; Milton Chapman</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial">
+                <div class="testimonial-content">         
+                  <div class="testimonial-info">
+                    <div class="testimonial-img">
+                      <img src="/assets/reviewer/4.png" alt="Sarah Johnson">
+                    </div>
+                    <div>
+                      <p class="testimonial-text">OmniFood is just awesome! I'm a busy mom with two kids, and their meals save me so much time. Plus, the food is organic and incredibly tasty!</p>
+                      <p class="testimonial-author">&mdash; Sarah Johnson</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-dots">
+            <button class="dot active" aria-label="Go to testimonial 1"></button>
+            <button class="dot" aria-label="Go to testimonial 2"></button>
+            <button class="dot" aria-label="Go to testimonial 3"></button>
+            <button class="dot" aria-label="Go to testimonial 4"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Plans Section -->
+    <section id="signup" class="pricing">
+      <div class="container">
+        <h2 class="section-heading fade-in">Start eating healthy today</h2>
+        <p class="section-subheading fade-in stagger-delay-1">
+          Choose the plan that best fits your needs and start your journey to a healthier lifestyle.
+        </p>
+
+        <div class="pricing-grid">
+          <div class="pricing-card fade-in">
+            <div class="pricing-header">
+              <h3>Premium</h3>
+              <div class="pricing-price">
+                <span class="price">$399</span>
+                <span class="period">/month</span>
+              </div>
+              <p class="pricing-description">Perfect for food lovers who want the best quality</p>
+            </div>
+            <div class="pricing-content">
+              <ul class="pricing-features">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span>1 meal every day</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span>Order 24/7</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span>Access to newest creations</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span>Free delivery</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span>Premium ingredients</span>
+                </li>
+              </ul>
+            </div>
+            <div class="pricing-footer">
+              <button class="btn btn-outline-primary">Sign up now</button>
+            </div>
+          </div>
+
+          <div class="pricing-card popular fade-in" style="transition-delay: 100ms;">
+            <div class="popular-tag">Most Popular</div>
+            <div class="pricing-header">
+              <h3>Pro</h3>
+              <div class="pricing-price">
+                <span class="price">$149</span>
+                <span class="period">/month</span>
+              </div>
+              <p class="pricing-description">Great for busy professionals and families</p>
+            </div>
+            <div class="pricing-content">
+              <ul class="pricing-features">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span>1 meal 10 days/month</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span>Order 24/7</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span>Access to newest creations</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span>Free delivery</span>
+                </li>
+              </ul>
+            </div>
+            <div class="pricing-footer">
+              <button class="btn btn-primary">Sign up now</button>
+            </div>
+          </div>
+
+          <div class="pricing-card fade-in" style="transition-delay: 200ms;">
+            <div class="pricing-header">
+              <h3>Starter</h3>
+              <div class="pricing-price">
+                <span class="price">$19</span>
+                <span class="period">/month</span>
+              </div>
+              <p class="pricing-description">Perfect way to try our service</p>
+            </div>
+            <div class="pricing-content">
+              <ul class="pricing-features">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span>1 meal</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span>Order from 8 am to 12 pm</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span>Free delivery</span>
+                </li>
+              </ul>
+            </div>
+            <div class="pricing-footer">
+              <button class="btn btn-outline-primary">Sign up now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- Contact Form Section -->
+<section class="contact">
+  <div class="container">
+    <h2 class="section-heading fade-in">We're happy to hear from you</h2>
+    <p class="section-subheading fade-in stagger-delay-1">
+      Have a question or want to know more about our service? Drop us a line and we'll get back to you.
+    </p>
+
+    <div class="contact-content fade-in stagger-delay-2">
+      <div class="contact-form-container">
+        <form id="contact-form" class="contact-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your email" required>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+            </div>
+
+            <div class="form-group">
+              <label for="findUs">How did you find us?</label>
+              <select id="findUs" name="findUs">
+                <option value="" selected disabled>Select an option</option>
+                <option value="friends">Friends</option>
+                <option value="search">Search engine</option>
+                <option value="ad">Advertisement</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message" rows="6" required></textarea>
+          </div>
+
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Subscribe to our newsletter for the latest updates and promotions</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-image">
+        <img src="/assets/extra/contact.jpg" alt="Contact Us">
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Column 1: About -->
+        <div class="footer-col">
+          <h3>About OmniFood</h3>
+          <p>
+            OmniFood is a premium food delivery service with the mission to bring affordable and healthy meals to as
+            many people as possible.
+          </p>
+          <div class="social-links">
+            <a href="https://www.facebook.com" aria-label="Facebook">
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://www.twitter.com" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+              </svg>
+            </a>
+            <a href="https://github.com/villan7667" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 1C5.925 1 1 5.925 1 12c0 4.867 3.165 8.983 7.557 10.435.553.1.757-.24.757-.534v-1.872c-3.07.668-3.716-1.48-3.716-1.48-.504-1.28-1.23-1.622-1.23-1.622-1.006-.688.076-.674.076-.674 1.11.078 1.695 1.14 1.695 1.14.99 1.696 2.598 1.206 3.232.922.1-.717.388-1.206.705-1.484-2.45-.28-5.024-1.225-5.024-5.455 0-1.205.43-2.188 1.136-2.958-.113-.278-.492-1.396.107-2.91 0 0 .926-.296 3.03 1.13.88-.244 1.82-.366 2.755-.37.935.004 1.875.126 2.755.37 2.103-1.426 3.027-1.13 3.027-1.13.6 1.514.222 2.632.11 2.91.707.77 1.134 1.753 1.134 2.958 0 4.24-2.577 5.173-5.035 5.448.398.34.75 1.014.75 2.045v3.03c0 .296.202.638.762.53C19.84 20.98 23 16.867 23 12c0-6.075-4.925-11-11-11z"/>
+              </svg>
+              
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Blog -->
+        <div class="footer-col">
+          <h3>Blog</h3>
+          <ul>
+            <li><a href="#">The Science of Healthy Eating</a></li>
+            <li><a href="#">How to Eat Well on a Budget</a></li>
+            <li><a href="#">Seasonal Ingredients Guide</a></li>
+            <li><a href="#">Meet Our Chefs</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Press -->
+        <div class="footer-col">
+          <h3>Press</h3>
+          <ul>
+            <li><a href="#">Business Insider</a></li>
+            <li><a href="#">New York Times</a></li>
+            <li><a href="#">Forbes</a></li>
+            <li><a href="#">TechCrunch</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <address>
+            <p>2nd Floor, Dhanbad </p>
+            <p>Jharkhand 826001</p>
+            <p>Phone: 1800-800-OmniFood</p>
+           <p>Email: <a href="hsgf7667@gmail.com">Contact@OmniFood..</a></p>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> OmniFood. All rights reserved Under villan7667@.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
