@@ -1,10 +1,10 @@
-// DOM Elements
+// DOM Elements its me villan 😂
 const navbar = document.querySelector('.navbar');
-const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-const mobileNav = document.querySelector('.mobile-nav');
+const menuToggleBtn = document.querySelector('.menu-toggle-btn');
+const mainNav = document.querySelector('.main-nav');
 const menuIcon = document.querySelector('.menu-icon');
 const closeIcon = document.querySelector('.close-icon');
-const mobileNavLinks = document.querySelectorAll('.mobile-nav .nav-link');
+const navLinks = document.querySelectorAll('.main-nav .nav-link');
 const testimonialTrack = document.querySelector('.testimonials-track');
 const testimonialDots = document.querySelectorAll('.testimonial-dots .dot');
 const prevBtn = document.querySelector('.slider-btn-prev');
@@ -39,40 +39,49 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Mobile menu toggle
-mobileMenuBtn.addEventListener('click', () => {
-  // Toggle mobile nav visibility properly
-  if (mobileNav.classList.contains('hidden')) {
-    mobileNav.classList.remove('hidden');
+// Toggle menu function
+function toggleMenu(show) {
+  if (show) {
+    mainNav.classList.add('active');
     menuIcon.classList.add('hidden');
     closeIcon.classList.remove('hidden');
     document.body.style.overflow = 'hidden'; // Prevent background scrolling
   } else {
-    mobileNav.classList.add('hidden');
+    mainNav.classList.remove('active');
     menuIcon.classList.remove('hidden');
     closeIcon.classList.add('hidden');
     document.body.style.overflow = 'auto'; // Allow scrolling again
   }
+}
+
+// Menu toggle button click
+menuToggleBtn.addEventListener('click', () => {
+  const isMenuActive = mainNav.classList.contains('active');
+  toggleMenu(!isMenuActive);
 });
 
-// Close mobile menu when clicking outside - NEW
+// Close menu when clicking on a nav link
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    if (window.innerWidth < 59 * 16) { // 59em
+      toggleMenu(false);
+    }
+  });
+});
+
+// Close menu when clicking outside
 document.addEventListener('click', (e) => {
-  if (!mobileNav.classList.contains('hidden') && 
-      !mobileNav.contains(e.target) && 
-      !mobileMenuBtn.contains(e.target)) {
-    mobileNav.classList.add('hidden');
-    menuIcon.classList.remove('hidden');
-    closeIcon.classList.add('hidden');
-    document.body.style.overflow = 'auto';
+  if (mainNav.classList.contains('active') && 
+      !mainNav.contains(e.target) && 
+      !menuToggleBtn.contains(e.target)) {
+    toggleMenu(false);
   }
 });
-// Handle window resize - NEW
+
+// Handle window resize
 window.addEventListener('resize', () => {
-  if (window.innerWidth > 768 && !mobileNav.classList.contains('hidden')) {
-    mobileNav.classList.add('hidden');
-    menuIcon.classList.remove('hidden');
-    closeIcon.classList.add('hidden');
-    document.body.style.overflow = 'auto';
+  if (window.innerWidth > 59 * 16) { // 59em
+    toggleMenu(false);
   }
 });
 
@@ -201,7 +210,7 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Smooth scrolling for anchor links
+// scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
